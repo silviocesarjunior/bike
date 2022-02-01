@@ -4,7 +4,7 @@ import React from 'react';
 const Climb = () => {
   return (
     <View>
-      <Text>Climb</Text>
+      <Text></Text>
     </View>
   );
 };

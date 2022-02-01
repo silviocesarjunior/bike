@@ -1,4 +1,5 @@
 import React from 'react';
+import 'react-native-gesture-handler';
 import { StyleSheet, Text, View, ImageBackground } from 'react-native';
 import MenuItem from '../components/MenuItem';
 import { useNavigation } from '@react-navigation/native';

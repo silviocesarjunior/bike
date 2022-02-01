@@ -4,7 +4,7 @@ import React from 'react';
 const Config = () => {
   return (
     <View>
-      <Text>Config</Text>
+      <Text></Text>
     </View>
   );
 };

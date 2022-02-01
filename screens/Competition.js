@@ -4,7 +4,7 @@ import React from 'react';
 const Competition = () => {
   return (
     <View>
-      <Text>Competition</Text>
+      <Text></Text>
     </View>
   );
 };
