@@ -1,12 +1,12 @@
 import { View, Text } from 'react-native';
 import React from 'react';
 
-const walk = () => {
+const Walk = () => {
   return (
     <View>
-      <Text>Walk</Text>
+      <Text>Ride a Walk</Text>
     </View>
   );
 };
 
-export default walk;
+export default Walk;

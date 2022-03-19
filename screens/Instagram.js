@@ -4,7 +4,7 @@ import React from 'react';
 const Instagram = () => {
   return (
     <View>
-      <Text></Text>
+      <Text>Instagram</Text>
     </View>
   );
 };

@@ -1,6 +1,5 @@
 import React from 'react';
-import 'react-native-gesture-handler';
-import { StyleSheet, Text, View, ImageBackground } from 'react-native';
+import { StyleSheet, Text, View, ImageBackground,Button, TouchableOpacity } from 'react-native';
 import MenuItem from '../components/MenuItem';
 import { useNavigation } from '@react-navigation/native';
 
@@ -17,7 +16,7 @@ export default function Home(){
           <View style={styles.top}>
             <Text style={styles.header}>H O M E</Text>
           </View>
-          
+          <Button style={styles.title} title="Menu Principal" onPress={() =>navigation.navigate('Climb')} />
           <View style={styles.menuContainer}>
             <MenuItem itemImage={require('../img/pedal1.jpg')} name="Climb" onPress={() => navigation.navigate('Climb') } />
             <MenuItem itemImage={require('../img/pedal2.jpg')} name="Walk" onPress={() => navigation.navigate('Walk')} />

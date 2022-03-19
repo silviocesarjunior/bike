@@ -4,7 +4,7 @@ import React from 'react';
 const Speed = () => {
   return (
     <View>
-      <Text></Text>
+      <Text>Speed</Text>
     </View>
   );
 };
