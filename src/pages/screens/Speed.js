@@ -1,0 +1,21 @@
+import { View, Text,StyleSheet } from 'react-native'
+import React from 'react'
+
+export default function Speed() {
+  return (
+    <View>
+      <Text style={styles.header}>Speed</Text>
+    </View>
+  );
+}
+
+const styles = StyleSheet.create({
+  container: {
+   
+  },
+  header: {
+    color: '#000',
+    fontSize: 30,
+    borderColor: '#000',
+  },
+});
