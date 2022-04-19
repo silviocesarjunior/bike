@@ -4,7 +4,7 @@ import React from 'react'
 export default function Config() {
   return (
     <View>
-      <Text style={styles.header}>Configurações</Text>
+      <Text style={styles.header}>Config</Text>
     </View>
   );
 }

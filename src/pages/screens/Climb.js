@@ -1,6 +1,7 @@
 import React from 'react';
 import { View, Text, StyleSheet, Image, TouchableOpacity } from 'react-native';
-import { useNavigation } from '@react-navigation/native'
+import { useNavigation } from '@react-navigation/native';
+import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 
 export default function Climb() {
   const navigation = useNavigation();
@@ -12,12 +13,13 @@ export default function Climb() {
             <Image source={require('../../../img/Vector.png')} />
           </TouchableOpacity>
         </View>
-        <View>
+        <View style={styles.cabecalho}>
+          <TouchableOpacity onPress={() => navigation.navigate('Home')}>
+            <Image source={require('../../../img/Vector.png')} style={styles.iconrodape}></Image>
+          </TouchableOpacity>
           <Text style={styles.nameheader}>Pedalada</Text>
-        </View>
-        <View style={styles.iconconfig}>
           <TouchableOpacity onPress={() => navigation.navigate('Config')}>
-            <Image source={require('../../../img/config.png')}></Image>
+            <Image source={require('../../../img/Config.png')} style={styles.iconrodape}></Image>
           </TouchableOpacity>
         </View>
       </View>
@@ -35,6 +37,8 @@ export default function Climb() {
         </View>
       </View>
     </View>
+
+
   );
 }
 
@@ -42,6 +46,12 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#fff',
+  },
+  cabecalho: {
+    flexDirection: 'row',
+    width: '100%',
+    alignItems: 'center',
+    justifyContent: 'center',
   },
   title: {
     flexDirection: 'row',
